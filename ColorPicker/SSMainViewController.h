@@ -7,8 +7,11 @@
 //
 
 #import "SSFlipsideViewController.h"
+#import "SSColorPicker.h"
 
-@interface SSMainViewController : UIViewController <SSFlipsideViewControllerDelegate>
+@interface SSMainViewController : UIViewController <SSFlipsideViewControllerDelegate, SSColorPickerDelegate>
+
+@property (strong,nonatomic) SSColorPicker *colorPicker;
 
 - (IBAction)showInfo:(id)sender;
 

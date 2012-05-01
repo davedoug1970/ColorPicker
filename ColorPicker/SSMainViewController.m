@@ -13,12 +13,17 @@
 @end
 
 @implementation SSMainViewController
-
+@synthesize colorPicker;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self setColorPicker:[[SSColorPicker alloc] initWithNibName:@"SSColorPicker" bundle:nil]];
+    [[self colorPicker] setDelegate:self];
+    [[self view] addSubview:[[self colorPicker] view]];
+    [[[self colorPicker] view] setCenter:CGPointMake(160, 200)];
 }
 
 - (void)viewDidUnload
@@ -47,4 +52,8 @@
     [self presentModalViewController:controller animated:YES];
 }
 
+- (void)colorChanged:(UIColor *)color from:(id)sender
+{
+    [[self view] setBackgroundColor:color];
+}
 @end
