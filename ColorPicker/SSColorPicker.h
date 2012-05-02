@@ -50,6 +50,8 @@
 -(void) updateWithPercentage:(CGFloat)newPercentage;
 -(void) updateToColor;
 -(void) colorChanged;
+-(void) setColor:(UIColor *)color;
+
 
 
 

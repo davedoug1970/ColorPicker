@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550CCAF9155169690006721F /* SSColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550CCAF8155169690006721F /* SSColorPicker.xib */; };
 		554E3DC6154E0C5F00FF955B /* SSTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 554E3DC5154E0C5F00FF955B /* SSTouchView.m */; };
 		554E3DCB154EB9B400FF955B /* circlemask.png in Resources */ = {isa = PBXBuildFile; fileRef = 554E3DCA154EB9B400FF955B /* circlemask.png */; };
 		554E3E75154F0E3300FF955B /* ColourUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 554E3DC9154EB91A00FF955B /* ColourUtils.m */; };
@@ -24,7 +25,6 @@
 		55E753181549D0B7003F465D /* SSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E753161549D0B7003F465D /* SSMainViewController.xib */; };
 		55E7531B1549D0B7003F465D /* SSFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E753191549D0B7003F465D /* SSFlipsideViewController.xib */; };
 		55E753C2154C7944003F465D /* SSColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E753C0154C7943003F465D /* SSColorPicker.m */; };
-		55E753C3154C7944003F465D /* SSColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C1154C7943003F465D /* SSColorPicker.xib */; };
 		55E753CB154C7C71003F465D /* colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C4154C7C70003F465D /* colorPicker.png */; };
 		55E753CC154C7C71003F465D /* ColorPickerBkgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C5154C7C70003F465D /* ColorPickerBkgd.png */; };
 		55E753CD154C7C71003F465D /* colorPickerOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C6154C7C70003F465D /* colorPickerOverlay.png */; };
@@ -35,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550CCAF8155169690006721F /* SSColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSColorPicker.xib; sourceTree = "<group>"; };
 		554E3DC4154E0C5F00FF955B /* SSTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTouchView.h; sourceTree = "<group>"; };
 		554E3DC5154E0C5F00FF955B /* SSTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTouchView.m; sourceTree = "<group>"; };
 		554E3DC8154EB91A00FF955B /* ColourUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColourUtils.h; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		55E7531A1549D0B7003F465D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSFlipsideViewController.xib; sourceTree = "<group>"; };
 		55E753BF154C7943003F465D /* SSColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSColorPicker.h; sourceTree = "<group>"; };
 		55E753C0154C7943003F465D /* SSColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSColorPicker.m; sourceTree = "<group>"; };
-		55E753C1154C7943003F465D /* SSColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSColorPicker.xib; sourceTree = "<group>"; };
 		55E753C4154C7C70003F465D /* colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPicker.png; sourceTree = "<group>"; };
 		55E753C5154C7C70003F465D /* ColorPickerBkgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorPickerBkgd.png; sourceTree = "<group>"; };
 		55E753C6154C7C70003F465D /* colorPickerOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPickerOverlay.png; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 				55E753191549D0B7003F465D /* SSFlipsideViewController.xib */,
 				55E753BF154C7943003F465D /* SSColorPicker.h */,
 				55E753C0154C7943003F465D /* SSColorPicker.m */,
-				55E753C1154C7943003F465D /* SSColorPicker.xib */,
+				550CCAF8155169690006721F /* SSColorPicker.xib */,
 				554E3DC4154E0C5F00FF955B /* SSTouchView.h */,
 				554E3DC5154E0C5F00FF955B /* SSTouchView.m */,
 				55E753051549D0B7003F465D /* Supporting Files */,
@@ -212,7 +212,6 @@
 				55E753091549D0B7003F465D /* InfoPlist.strings in Resources */,
 				55E753181549D0B7003F465D /* SSMainViewController.xib in Resources */,
 				55E7531B1549D0B7003F465D /* SSFlipsideViewController.xib in Resources */,
-				55E753C3154C7944003F465D /* SSColorPicker.xib in Resources */,
 				55E753CB154C7C71003F465D /* colorPicker.png in Resources */,
 				55E753CC154C7C71003F465D /* ColorPickerBkgd.png in Resources */,
 				55E753CD154C7C71003F465D /* colorPickerOverlay.png in Resources */,
@@ -224,6 +223,7 @@
 				554E3F2B154F472500FF955B /* HuePickerBkgd2.png in Resources */,
 				554E3F2D154F5FA600FF955B /* Icon.png in Resources */,
 				554E3F2F154F5FA900FF955B /* Icon@2x.png in Resources */,
+				550CCAF9155169690006721F /* SSColorPicker.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

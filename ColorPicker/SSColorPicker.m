@@ -22,7 +22,7 @@
 	if (self)
 	{
         [self setBoxPos:35];	// starting position of the virtual box area for picking a colour
-        [self setBoxSize:110];	// the size (width and height) of the virtual box for picking a colour from
+        [self setBoxSize:165];	// the size (width and height) of the virtual box for picking a colour from
         [self setColorUtils:[ColourUtils sharedInstance]];
         [self setBrightness:.8];
         [self setSaturation:.8];
@@ -31,11 +31,27 @@
 	return self;
 }
 
+- (void)setColor:(UIColor *)color
+{
+    CGFloat h;
+    CGFloat s;
+    CGFloat b;
+    CGFloat a;
+    
+    [color getHue:&h saturation:&s brightness:&b alpha:&a];
+    
+    [self setPercentage:h];
+    [self setSaturation:s];
+    [self setBrightness:b];
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //[self updateColorPosition:[[self colorSelector] center]];
+    [self updateWithPercentage:[self percentage]];
     [self updateToColor];
     [self colorChanged];
 }
@@ -120,7 +136,7 @@
     float centerY		= self.huebkgd.bounds.size.height*.5;
     
     // work out the limit to the distance of the picker when moving around the hue bar
-    float limit			= self.huebkgd.bounds.size.width*.5 - 7;
+    float limit			= self.huebkgd.bounds.size.width*.5 - 11;
     
     // update angle
     float angleDeg		= newPercentage * 360.0f - 180.0f;
@@ -172,10 +188,10 @@
     UITouch *touch = [touches anyObject];
     CGPoint location;
     
-    if ([(SSTouchView *)sender tag] == 5) {
-        location = [touch locationInView:[self bkgd]];	// get the touch position
+    if ([(SSTouchView *)sender tag] == 2) {
+        location = [touch locationInView:[self bkgd]];
         [self checkColorPosition:location];
-    } else if ([(SSTouchView *)sender tag] == 10) {
+    } else if ([(SSTouchView *)sender tag] == 7) {
         location = [touch locationInView:[self huebkgd]];	// get the touch position
         [self checkHuePosition:location];
     }

@@ -21,6 +21,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self setColorPicker:[[SSColorPicker alloc] initWithNibName:@"SSColorPicker" bundle:nil]];
+    [[self colorPicker] setColor:[UIColor colorWithRed:.6 green:.6 blue:.6 alpha:1]];
+
     [[self colorPicker] setDelegate:self];
     [[self view] addSubview:[[self colorPicker] view]];
     [[[self colorPicker] view] setCenter:CGPointMake(160, 200)];
@@ -30,6 +32,7 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
