@@ -29,8 +29,6 @@
 		55E753CC154C7C71003F465D /* ColorPickerBkgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C5154C7C70003F465D /* ColorPickerBkgd.png */; };
 		55E753CD154C7C71003F465D /* colorPickerOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C6154C7C70003F465D /* colorPickerOverlay.png */; };
 		55E753CE154C7C71003F465D /* ColorPickerShadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C7154C7C70003F465D /* ColorPickerShadow.png */; };
-		55E753CF154C7C71003F465D /* HuePickerBkgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C8154C7C70003F465D /* HuePickerBkgd.png */; };
-		55E753D0154C7C71003F465D /* menuCircleWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C9154C7C70003F465D /* menuCircleWhite.png */; };
 		55E753D1154C7C71003F465D /* menuColorPanelBkgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753CA154C7C70003F465D /* menuColorPanelBkgd.png */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +64,6 @@
 		55E753C5154C7C70003F465D /* ColorPickerBkgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorPickerBkgd.png; sourceTree = "<group>"; };
 		55E753C6154C7C70003F465D /* colorPickerOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPickerOverlay.png; sourceTree = "<group>"; };
 		55E753C7154C7C70003F465D /* ColorPickerShadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorPickerShadow.png; sourceTree = "<group>"; };
-		55E753C8154C7C70003F465D /* HuePickerBkgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HuePickerBkgd.png; sourceTree = "<group>"; };
-		55E753C9154C7C70003F465D /* menuCircleWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuCircleWhite.png; sourceTree = "<group>"; };
 		55E753CA154C7C70003F465D /* menuColorPanelBkgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuColorPanelBkgd.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,8 +121,6 @@
 				55E753C5154C7C70003F465D /* ColorPickerBkgd.png */,
 				55E753C6154C7C70003F465D /* colorPickerOverlay.png */,
 				55E753C7154C7C70003F465D /* ColorPickerShadow.png */,
-				55E753C8154C7C70003F465D /* HuePickerBkgd.png */,
-				55E753C9154C7C70003F465D /* menuCircleWhite.png */,
 				55E753CA154C7C70003F465D /* menuColorPanelBkgd.png */,
 				55E7530D1549D0B7003F465D /* SSAppDelegate.h */,
 				55E7530E1549D0B7003F465D /* SSAppDelegate.m */,
@@ -216,8 +210,6 @@
 				55E753CC154C7C71003F465D /* ColorPickerBkgd.png in Resources */,
 				55E753CD154C7C71003F465D /* colorPickerOverlay.png in Resources */,
 				55E753CE154C7C71003F465D /* ColorPickerShadow.png in Resources */,
-				55E753CF154C7C71003F465D /* HuePickerBkgd.png in Resources */,
-				55E753D0154C7C71003F465D /* menuCircleWhite.png in Resources */,
 				55E753D1154C7C71003F465D /* menuColorPanelBkgd.png in Resources */,
 				554E3DCB154EB9B400FF955B /* circlemask.png in Resources */,
 				554E3F2B154F472500FF955B /* HuePickerBkgd2.png in Resources */,
