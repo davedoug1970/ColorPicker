@@ -43,13 +43,6 @@
 @property (weak,nonatomic) IBOutlet SSTouchView *colorSelector;
 @property (weak,nonatomic) id<SSColorPickerDelegate> delegate;
 
--(void) updateColorPosition:(CGPoint)sliderPosition;
--(void) checkColorPosition:(CGPoint)location;
--(void) updateHuePosition:(CGPoint)sliderPosition;
--(void) checkHuePosition:(CGPoint)location;
--(void) updateWithPercentage:(CGFloat)newPercentage;
--(void) updateToColor;
--(void) colorChanged;
 -(void) setColor:(UIColor *)color;
 
 

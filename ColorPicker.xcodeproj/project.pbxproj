@@ -14,6 +14,7 @@
 		554E3F2B154F472500FF955B /* HuePickerBkgd2.png in Resources */ = {isa = PBXBuildFile; fileRef = 554E3F2A154F472500FF955B /* HuePickerBkgd2.png */; };
 		554E3F2D154F5FA600FF955B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 554E3F2C154F5FA600FF955B /* Icon.png */; };
 		554E3F2F154F5FA900FF955B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554E3F2E154F5FA900FF955B /* Icon@2x.png */; };
+		554F0364155B558D00A85DBD /* SSColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 554F0363155B558D00A85DBD /* SSColorPicker.m */; };
 		55E752FF1549D0B7003F465D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E752FE1549D0B7003F465D /* UIKit.framework */; };
 		55E753011549D0B7003F465D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E753001549D0B7003F465D /* Foundation.framework */; };
 		55E753031549D0B7003F465D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E753021549D0B7003F465D /* CoreGraphics.framework */; };
@@ -24,7 +25,6 @@
 		55E753151549D0B7003F465D /* SSFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E753141549D0B7003F465D /* SSFlipsideViewController.m */; };
 		55E753181549D0B7003F465D /* SSMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E753161549D0B7003F465D /* SSMainViewController.xib */; };
 		55E7531B1549D0B7003F465D /* SSFlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55E753191549D0B7003F465D /* SSFlipsideViewController.xib */; };
-		55E753C2154C7944003F465D /* SSColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E753C0154C7943003F465D /* SSColorPicker.m */; };
 		55E753CB154C7C71003F465D /* colorPicker.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C4154C7C70003F465D /* colorPicker.png */; };
 		55E753CC154C7C71003F465D /* ColorPickerBkgd.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C5154C7C70003F465D /* ColorPickerBkgd.png */; };
 		55E753CD154C7C71003F465D /* colorPickerOverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E753C6154C7C70003F465D /* colorPickerOverlay.png */; };
@@ -42,6 +42,8 @@
 		554E3F2A154F472500FF955B /* HuePickerBkgd2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HuePickerBkgd2.png; sourceTree = "<group>"; };
 		554E3F2C154F5FA600FF955B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		554E3F2E154F5FA900FF955B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		554F0362155B558D00A85DBD /* SSColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSColorPicker.h; sourceTree = "<group>"; };
+		554F0363155B558D00A85DBD /* SSColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSColorPicker.m; sourceTree = "<group>"; };
 		55E752FA1549D0B7003F465D /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E752FE1549D0B7003F465D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55E753001549D0B7003F465D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,8 +60,6 @@
 		55E753141549D0B7003F465D /* SSFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSFlipsideViewController.m; sourceTree = "<group>"; };
 		55E753171549D0B7003F465D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSMainViewController.xib; sourceTree = "<group>"; };
 		55E7531A1549D0B7003F465D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SSFlipsideViewController.xib; sourceTree = "<group>"; };
-		55E753BF154C7943003F465D /* SSColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSColorPicker.h; sourceTree = "<group>"; };
-		55E753C0154C7943003F465D /* SSColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSColorPicker.m; sourceTree = "<group>"; };
 		55E753C4154C7C70003F465D /* colorPicker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPicker.png; sourceTree = "<group>"; };
 		55E753C5154C7C70003F465D /* ColorPickerBkgd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ColorPickerBkgd.png; sourceTree = "<group>"; };
 		55E753C6154C7C70003F465D /* colorPickerOverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colorPickerOverlay.png; sourceTree = "<group>"; };
@@ -130,8 +130,8 @@
 				55E753141549D0B7003F465D /* SSFlipsideViewController.m */,
 				55E753161549D0B7003F465D /* SSMainViewController.xib */,
 				55E753191549D0B7003F465D /* SSFlipsideViewController.xib */,
-				55E753BF154C7943003F465D /* SSColorPicker.h */,
-				55E753C0154C7943003F465D /* SSColorPicker.m */,
+				554F0362155B558D00A85DBD /* SSColorPicker.h */,
+				554F0363155B558D00A85DBD /* SSColorPicker.m */,
 				550CCAF8155169690006721F /* SSColorPicker.xib */,
 				554E3DC4154E0C5F00FF955B /* SSTouchView.h */,
 				554E3DC5154E0C5F00FF955B /* SSTouchView.m */,
@@ -231,8 +231,8 @@
 				55E753121549D0B7003F465D /* SSMainViewController.m in Sources */,
 				554E3E75154F0E3300FF955B /* ColourUtils.m in Sources */,
 				55E753151549D0B7003F465D /* SSFlipsideViewController.m in Sources */,
-				55E753C2154C7944003F465D /* SSColorPicker.m in Sources */,
 				554E3DC6154E0C5F00FF955B /* SSTouchView.m in Sources */,
+				554F0364155B558D00A85DBD /* SSColorPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

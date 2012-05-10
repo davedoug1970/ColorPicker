@@ -11,6 +11,15 @@
 
 @interface SSColorPicker ()
 
+-(void) updateColorPosition:(CGPoint)sliderPosition;
+-(void) updateColorSlider;
+-(void) checkColorPosition:(CGPoint)location;
+-(void) updateHuePosition:(CGPoint)sliderPosition;
+-(void) checkHuePosition:(CGPoint)location;
+-(void) updateWithPercentage:(CGFloat)newPercentage;
+-(void) updateToColor;
+-(void) colorChanged;
+
 @end
 
 @implementation SSColorPicker
@@ -44,6 +53,10 @@
     [self setSaturation:s];
     [self setBrightness:b];
 
+    [self updateWithPercentage:[self percentage]];
+    [self updateToColor];
+    [self updateColorSlider];
+    [self colorChanged];
 }
 
 - (void)viewDidLoad
@@ -51,9 +64,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //[self updateColorPosition:[[self colorSelector] center]];
-    [self updateWithPercentage:[self percentage]];
-    [self updateToColor];
-    [self colorChanged];
+//    [self updateWithPercentage:[self percentage]];
+//    [self updateToColor];
+//    [self colorChanged];
 }
 
 - (void)viewDidUnload
@@ -73,6 +86,13 @@
     [[self bkgd] setImage:[ColourUtils newImageFromMaskImage:[[self bkgd] image] inColor:[UIColor colorWithHue:[self percentage] saturation:1.0f brightness:1.0f alpha:1.0f]]];
 }
 
+- (void)updateColorSlider
+{
+    CGPoint pos = CGPointMake(boxSize * (1 - [self saturation]), 
+                              boxSize * (1 - [self brightness]));
+    [self updateColorPosition:pos];
+}
+     
 -(void)updateColorPosition:(CGPoint)sliderPosition
 {
     // clamp the position of the icon within the circle
