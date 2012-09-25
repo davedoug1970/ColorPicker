@@ -22,7 +22,9 @@
 
 @protocol SSColorPickerDelegate <NSObject>
 
+- (UIView *)view;
 - (void)colorChanged:(UIColor *)color from:(id)sender;
+- (void)dismiss:(id)sender;
 
 @end
 
@@ -44,7 +46,7 @@
 @property (weak,nonatomic) id<SSColorPickerDelegate> delegate;
 
 -(void) setColor:(UIColor *)color;
-
+-(void) showColorPicker:(UIColor *)startColor;
 
 
 

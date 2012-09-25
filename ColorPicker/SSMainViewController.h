@@ -14,5 +14,6 @@
 @property (strong,nonatomic) SSColorPicker *colorPicker;
 
 - (IBAction)showInfo:(id)sender;
+- (IBAction)show:(id)sender;
 
 @end

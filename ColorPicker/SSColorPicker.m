@@ -8,6 +8,7 @@
 
 #import "SSColorPicker.h"
 #import "ColourUtils.h"
+#import "SSTouchViewNoTransparent.h"
 
 @interface SSColorPicker ()
 
@@ -23,7 +24,7 @@
 @end
 
 @implementation SSColorPicker
-@synthesize hueSelector, colorSelector, bkgd, huebkgd, boxPos, boxSize, overlay, shadow, saturation,brightness, percentage, colorUtils, delegate;
+@synthesize hueSelector, colorSelector, bkgd, huebkgd, boxPos, boxSize, overlay, shadow, saturation, brightness, percentage, colorUtils, delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -64,9 +65,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     //[self updateColorPosition:[[self colorSelector] center]];
-//    [self updateWithPercentage:[self percentage]];
-//    [self updateToColor];
-//    [self colorChanged];
 }
 
 - (void)viewDidUnload
@@ -159,7 +157,7 @@
     float limit			= self.huebkgd.bounds.size.width*.5 - 11;
     
     // update angle
-    float angleDeg		= newPercentage * 360.0f - 180.0f;
+    float angleDeg		= (newPercentage * 360.0f) - 180.0f;
     float angle			= CC_DEGREES_TO_RADIANS(angleDeg);
     
     // set new position of the slider
@@ -168,7 +166,7 @@
     [[self hueSelector] setCenter:[[self huebkgd] convertPoint:CGPointMake(x, y) toView:[self view]]]; 
     
     // update percentage reference
-    percentage			= newPercentage;
+    [self setPercentage:newPercentage];
 }
 
 -(void)updateHuePosition:(CGPoint)sliderPosition
@@ -212,8 +210,17 @@
         location = [touch locationInView:[self bkgd]];
         [self checkColorPosition:location];
     } else if ([(SSTouchView *)sender tag] == 7) {
-        location = [touch locationInView:[self huebkgd]];	// get the touch position
-        [self checkHuePosition:location];
+        if ([(SSTouchViewNoTransparent*)sender shouldForwardTouches]) {
+            // a transparent region of this view was touched and we need to treat it as
+            // a touch that should dismiss the view...
+            [delegate dismiss:self];
+        } else {
+            location = [touch locationInView:[self huebkgd]];	// get the touch position
+            [self checkHuePosition:location];
+        }
+    } else if ([(SSTouchView *)sender tag] == 10) {
+        // tell delegate to dismiss this view...
+        [delegate dismiss:self];
     }
 }
 
@@ -239,5 +246,18 @@
 - (void)colorChanged
 {
     [[self delegate] colorChanged:[UIColor colorWithHue:[self percentage] saturation:[self saturation] brightness:[self brightness] alpha:1.0f] from:self];
+}
+
+- (void)showColorPicker:(UIColor *)startColor
+{
+    [[[self delegate] view] addSubview:[self view]];
+    //[[self view] setCenter:CGPointMake(160, 200)];
+    [[self view] setAlpha:0];
+    //[self setColor:[UIColor colorWithRed:.6 green:.6 blue:.6 alpha:1]];
+    [self setColor:startColor];
+    
+    [UIView animateWithDuration:.6 animations:^{
+        [[self view] setAlpha:1];
+    }];
 }
 @end

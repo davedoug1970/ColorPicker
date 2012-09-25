@@ -19,13 +19,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    [self setColorPicker:[[SSColorPicker alloc] initWithNibName:@"SSColorPicker" bundle:nil]];
-    [[self colorPicker] setColor:[UIColor colorWithRed:.6 green:.6 blue:.6 alpha:1]];
-
-    [[self colorPicker] setDelegate:self];
-    [[self view] addSubview:[[self colorPicker] view]];
-    [[[self colorPicker] view] setCenter:CGPointMake(160, 200)];
 }
 
 - (void)viewDidUnload
@@ -58,5 +51,22 @@
 - (void)colorChanged:(UIColor *)color from:(id)sender
 {
     [[self view] setBackgroundColor:color];
+}
+
+- (void)dismiss:(id)sender
+{
+    [UIView animateWithDuration:.6 animations:^{
+        [[[self colorPicker] view] setAlpha:0];
+        [self setColorPicker:nil];
+    }];
+}
+
+- (IBAction)show:(id)sender
+{
+    [self setColorPicker:[[SSColorPicker alloc] initWithNibName:@"SSColorPicker" bundle:nil]];
+    [[self colorPicker] setDelegate:self];
+    //[[self colorPicker] setColor:[[self view] backgroundColor]];
+    
+    [[self colorPicker] showColorPicker:[[self view] backgroundColor]];
 }
 @end

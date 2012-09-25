@@ -18,6 +18,7 @@
 		5565379516124EEA00823DB2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5565379216124EEA00823DB2 /* Default-568h@2x.png */; };
 		5565379616124EEA00823DB2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5565379316124EEA00823DB2 /* Default.png */; };
 		5565379716124EEA00823DB2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5565379416124EEA00823DB2 /* Default@2x.png */; };
+		5565379F161250DC00823DB2 /* SSTouchViewNoTransparent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5565379E161250DC00823DB2 /* SSTouchViewNoTransparent.m */; };
 		55E752FF1549D0B7003F465D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E752FE1549D0B7003F465D /* UIKit.framework */; };
 		55E753011549D0B7003F465D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E753001549D0B7003F465D /* Foundation.framework */; };
 		55E753031549D0B7003F465D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E753021549D0B7003F465D /* CoreGraphics.framework */; };
@@ -50,6 +51,8 @@
 		5565379216124EEA00823DB2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5565379316124EEA00823DB2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5565379416124EEA00823DB2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5565379D161250DC00823DB2 /* SSTouchViewNoTransparent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTouchViewNoTransparent.h; sourceTree = "<group>"; };
+		5565379E161250DC00823DB2 /* SSTouchViewNoTransparent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTouchViewNoTransparent.m; sourceTree = "<group>"; };
 		55E752FA1549D0B7003F465D /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55E752FE1549D0B7003F465D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55E753001549D0B7003F465D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				550CCAF8155169690006721F /* SSColorPicker.xib */,
 				554E3DC4154E0C5F00FF955B /* SSTouchView.h */,
 				554E3DC5154E0C5F00FF955B /* SSTouchView.m */,
+				5565379D161250DC00823DB2 /* SSTouchViewNoTransparent.h */,
+				5565379E161250DC00823DB2 /* SSTouchViewNoTransparent.m */,
 				55E753051549D0B7003F465D /* Supporting Files */,
 			);
 			path = ColorPicker;
@@ -245,6 +250,7 @@
 				55E753151549D0B7003F465D /* SSFlipsideViewController.m in Sources */,
 				554E3DC6154E0C5F00FF955B /* SSTouchView.m in Sources */,
 				554F0364155B558D00A85DBD /* SSColorPicker.m in Sources */,
+				5565379F161250DC00823DB2 /* SSTouchViewNoTransparent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
