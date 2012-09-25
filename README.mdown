@@ -1,0 +1,1 @@
+UIActivityExample uses zLib licensing, so all of my source code can be used royalty-free in your app. Just make sure that you don't remove the copyright notice from the source code. You don't have to attribute me in your app, although I would be glad if you did.
