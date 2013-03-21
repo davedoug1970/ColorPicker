@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		550CCAF9155169690006721F /* SSColorPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 550CCAF8155169690006721F /* SSColorPicker.xib */; };
+		5511450B1614A486007BFE4F /* menuColorPanelBkgdDwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5511450A1614A486007BFE4F /* menuColorPanelBkgdDwn.png */; };
 		554E3DC6154E0C5F00FF955B /* SSTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 554E3DC5154E0C5F00FF955B /* SSTouchView.m */; };
 		554E3DCB154EB9B400FF955B /* circlemask.png in Resources */ = {isa = PBXBuildFile; fileRef = 554E3DCA154EB9B400FF955B /* circlemask.png */; };
 		554E3E75154F0E3300FF955B /* ColourUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 554E3DC9154EB91A00FF955B /* ColourUtils.m */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		550CCAF8155169690006721F /* SSColorPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SSColorPicker.xib; sourceTree = "<group>"; };
+		5511450A1614A486007BFE4F /* menuColorPanelBkgdDwn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuColorPanelBkgdDwn.png; sourceTree = "<group>"; };
 		554E3DC4154E0C5F00FF955B /* SSTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTouchView.h; sourceTree = "<group>"; };
 		554E3DC5154E0C5F00FF955B /* SSTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTouchView.m; sourceTree = "<group>"; };
 		554E3DC8154EB91A00FF955B /* ColourUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColourUtils.h; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		55E753041549D0B7003F465D /* ColorPicker */ = {
 			isa = PBXGroup;
 			children = (
+				5511450A1614A486007BFE4F /* menuColorPanelBkgdDwn.png */,
 				554E3F2A154F472500FF955B /* HuePickerBkgd2.png */,
 				554E3DCA154EB9B400FF955B /* circlemask.png */,
 				554E3DC8154EB91A00FF955B /* ColourUtils.h */,
@@ -233,6 +236,7 @@
 				5565379516124EEA00823DB2 /* Default-568h@2x.png in Resources */,
 				5565379616124EEA00823DB2 /* Default.png in Resources */,
 				5565379716124EEA00823DB2 /* Default@2x.png in Resources */,
+				5511450B1614A486007BFE4F /* menuColorPanelBkgdDwn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
