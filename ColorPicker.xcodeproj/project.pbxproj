@@ -203,6 +203,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 55E752EF1549D0B7003F465D;
@@ -336,9 +337,11 @@
 		55E7531F1549D0B8003F465D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorPicker/ColorPicker-Prefix.pch";
 				INFOPLIST_FILE = "ColorPicker/ColorPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -347,9 +350,11 @@
 		55E753201549D0B8003F465D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ColorPicker/ColorPicker-Prefix.pch";
 				INFOPLIST_FILE = "ColorPicker/ColorPicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
